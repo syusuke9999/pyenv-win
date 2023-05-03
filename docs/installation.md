@@ -8,9 +8,9 @@ Currently, we support following ways, choose any of your comfort:
 - [Python pip](#python-pip) - for existing users
 - [Chocolatey](#chocolatey)
 - [How to use 32-train](#how-to-use-32-train)  
-  - [check announcements](../README.md#announcements)
+  - [check announcements](../README.md#お知らせ)
 
-Hurray! When you are done here are steps to [Validate installation](../README.md#validate-installation)
+Hurray! When you are done here are steps to [Validate installation](../README.md#インストールの確認)
 
 _NOTE:_ If you are running Windows 10 1905 or newer, you might need to disable the built-in Python launcher via Start > "Manage App Execution Aliases" and turning off the "App Installer" aliases for Python
 
@@ -18,7 +18,7 @@ _NOTE:_ If you are running Windows 10 1905 or newer, you might need to disable t
 
 ## **PowerShell**
 
-The easiest way to install pyenv-win is to run the following installation command in a PowerShell terminal:
+pyenv-winをインストールする最も簡単な方法は、PowerShellターミナルで以下のインストールコマンドを実行することです:
 
 ```pwsh
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
@@ -39,7 +39,7 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv
 
 インストールが完了しました！
 
-[READMEに戻る](../README.md#installation)
+[READMEに戻る](../README.md#インストール)
 
 ***
 
@@ -57,7 +57,7 @@ _Note:_ Don't forget the check above link, it contains final steps to complete.
 
 Installation is complete!
 
-[Return to README](../README.md#installation)
+[Return to README](../README.md#インストール)
 
 ***
 
@@ -81,7 +81,7 @@ _Note:_ Don't forget the check above link, it contains final steps to complete.
 
 Installation is complete!
 
-Return to [README](../README.md#installation)
+Return to [README](../README.md#インストール)
 
 ***
 
@@ -93,7 +93,7 @@ For existing python users
 
 `pip install pyenv-win --target %USERPROFILE%\\.pyenv`  
 
-If you run into an error with the above command use the folllowing instead ([#303](https://github.com/pyenv-win/pyenv-win/issues/303)):
+If you run into an error with the above command use the following instead ([#303](https://github.com/pyenv-win/pyenv-win/issues/303)):
 
 `pip install pyenv-win --target %USERPROFILE%\\.pyenv --no-user --upgrade`
 
@@ -107,7 +107,7 @@ Proceed to [adding System Settings](#add-system-settings).
 
 Installation should then be complete!
 
-Return to [README](../README.md#installation)
+Return to [README](../README.md#インストール)
 
 ***
 
@@ -123,13 +123,13 @@ Installation is complete!
 
 Validate Installation
 
-Return to [README](../README.md#installation)
+Return to [README](../README.md#インストール)
 
 ***
 
 ## **Add System Settings**
 
-It's a easy way to use PowerShell here
+It's an easy way to use PowerShell here
 
 1. Adding PYENV, PYENV_HOME and PYENV_ROOT to your Environment Variables
 
@@ -149,7 +149,7 @@ It's a easy way to use PowerShell here
 
 Installation is done. Hurray!
 
-Return to [README](../README.md#installation)
+Return to [README](../README.md#インストール)
 
 ***
 
@@ -168,4 +168,4 @@ Return to [README](../README.md#installation)
   2. Follow step 2 from [Pyenv-win zip](#pyenv-win-zip)
   3. steps to [add System Settings](#add-system-settings)
 
-Return to [README](../README.md#installation)
+Return to [README](../README.md#インストール)

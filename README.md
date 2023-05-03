@@ -103,7 +103,7 @@ Python用の[pyenv][1]は素晴らしいツールですが、Ruby開発者向け
 1. コマンドプロンプトを再度開いて、`pyenv --version`を実行します。
 2. 次に、`pyenv`と入力して使用方法を確認します。
 
-"**command not found**"エラーが表示される場合は、以下の注意事項を確認し、[設定を手動で確認してください](#manually-check-the-settings)。
+"**command not found**"エラーが表示される場合は、以下の注意事項を確認し、[設定を手動で確認してください](#設定の手動確認)。
 
 Visual Studio Codeや組み込みターミナルを持つ他のIDEの場合は、再起動して再度確認してください。
 
