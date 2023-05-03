@@ -1,26 +1,26 @@
-# FAQ
+# よくある質問
 
-- **Question:** python --version is showing different version than expected?
-  - **Answer:** Check your **Environment Variables** where pyenv path need to be in priority. You can manually move them up, save it and restart your prompt (cmd/powershell/git-bash/etc)
+- **質問:** python --versionが期待したバージョンと異なる場合は？
+  - **回答:** **環境変数**を確認して、pyenvのパスが優先されるようにしてください。手動で上に移動させて保存し、プロンプト（cmd/powershell/git-bash/etc）を再起動してください。
 
-- **Question:** Does pyenv for windows support python2?
-  - **Answer:** Yes, We support python2 from version 2.4+ until python.org officially removes it.
-  - Versions below 2.4 use outdated Wise installers and have issues installing multiple patch versions, unlike Windows MSI and the new Python3 installers that support "extraction" installations.
+- **質問:** pyenv for windowsはpython2をサポートしていますか？
+  - **回答:** はい、python2はバージョン2.4+からサポートしています。python.orgが公式に削除するまでサポートしています。
+  - 2.4より下のバージョンは、古いWiseインストーラーを使用しており、複数のパッチバージョンをインストールする際に問題が発生します。これは、Windows MSIおよび新しいPython3インストーラーが「抽出」インストールをサポートしているのとは対照的です。
 
-- **Question:** Does pyenv for windows support python3?
-  - **Answer:** Yes, we support python3 from version 3.0. We support it from 3.0 until python.org officially removes it.
+- **質問:** pyenv for windowsはpython3をサポートしていますか？
+  - **回答:** はい、バージョン3.0からpython3をサポートしています。python.orgが公式に削除するまでサポートしています。
 
-- **Question:** I am getting the issue `batch file cannot be found.` while installing python, what should I do?
-  - **Answer:** You can ignore it. It's just calling `pyenv rehash` command before creating the bat file on some devices.
+- **質問:** pythonをインストールする際に、「batch file cannot be found.」という問題が発生しています。どうすればいいですか？
+  - **回答:** 無視して構いません。これは、一部のデバイスでbatファイルを作成する前に`pyenv rehash`コマンドを呼び出しているだけです。
 
-- **Question:** System is stuck while uninstalling a python version
-  - **Answer:** Navigate to the location where you installed pyenv, open its 'versions' folder (usually `%USERPROFILE%\.pyenv\pyenv-win\versions`), and delete the folder of the version you want removed.
+- **質問:** システムがPythonバージョンのアンインストール中に停止してしまいます
+  - **回答:** pyenvをインストールした場所に移動し、その「versions」フォルダ（通常は`%USERPROFILE%\.pyenv\pyenv-win\versions`）を開き、削除したいバージョンのフォルダを削除してください。
 
-- **Question:** I installed pyenv-win using pip. How can I uninstall it?
-  - **Answer:** Follow the pip instructions in [How to update pyenv](../README.md#how-to-update-pyenv) and then run `pip uninstall pyenv-win`
+- **質問:** pipを使ってpyenv-winをインストールしました。どのようにアンインストールできますか？
+  - **回答:** [pyenvの更新方法](../README.md#pyenvのアップデート方法)のpipの手順に従ってから、`pip uninstall pyenv-win`を実行してください。
 
-- **Question:** pyenv-win is not recognised, but I have set the ENV PATH?
-  - **Answer:** According to Windows, when adding a path under the User variable you need to logout and login again, in order to reflect any change. For the System variable it's not required.
+- **質問:** pyenv-winが認識されませんが、ENV PATHを設定しましたか？
+  - **回答:** Windowsによると、ユーザー変数の下にパスを追加する場合、変更を反映させるためにログアウトして再度ログインする必要があります。システム変数では必要ありません。
 
-  **Question:** How do I configure my company proxy in pyenv for windows?
-  - **Answer:** Set the `http_proxy` or `https_proxy` environment variable with the hostname or IP address of the proxy server in URL format, for example: `http://username:password@hostname:port/` or `http://hostname:port/`
+  **質問:** 会社のプロキシをpyenv for windowsで設定する方法は？
+  - **回答:** プロキシサーバーのホスト名またはIPアドレスをURL形式で`http_proxy`または`https_proxy`環境変数に設定します。例：`http://username:password@hostname:port/` または `http://hostname:port/`

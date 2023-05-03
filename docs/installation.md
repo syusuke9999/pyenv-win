@@ -1,6 +1,6 @@
 # Installation
 
-Currently we support following ways, choose any of your comfort:
+Currently, we support following ways, choose any of your comfort:
 
 - [PowerShell](#powershell) - easiest way
 - [Git Commands](#git-commands) - default way + adding manual settings
@@ -24,23 +24,22 @@ The easiest way to install pyenv-win is to run the following installation comman
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
 ```
 
-If you are getting any **UnauthorizedAccess** error as below then start Windows PowerShell with the "Run as administrator" option and run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`, now re-run the above installation command.
+以下のような **UnauthorizedAccess** エラーが発生した場合は、Windows PowerShellを「管理者として実行」オプションで起動し、`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`を実行してください。その後、上記のインストールコマンドを再度実行してください。
 
 ```plaintext
-& : File C:\Users\kirankotari\install-pyenv-win.ps1 cannot be loaded because running scripts is disabled on this system. For
-more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
-At line:1 char:173
+& : ファイル C:\Users\kirankotari\install-pyenv-win.ps1 は、このシステムでスクリプトの実行が無効になっているため読み込めません。詳細については、about_Execution_Policies を参照してください。https:/go.microsoft.com/fwlink/?LinkID=135170。
+1行目の文字:173
 + ... n.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
 + ~~~~~~~~~~~~~~~~~~~~~~~~~ 
  + CategoryInfo          : SecurityError: (:) [], PSSecurityException 
  + FullyQualifiedErrorId : UnauthorizedAccess
 ```
 
-For more information on 'digitally signed' or 'Security warning' you can refer to following issue [#332](https://github.com/pyenv-win/pyenv-win/issues/332)
+'デジタル署名'や'セキュリティ警告'に関する詳細情報は、次の問題 [#332](https://github.com/pyenv-win/pyenv-win/issues/332) を参照してください。
 
-Installation is complete!
+インストールが完了しました！
 
-[Return to README](../README.md#installation)
+[READMEに戻る](../README.md#installation)
 
 ***
 
