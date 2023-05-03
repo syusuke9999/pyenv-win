@@ -1,18 +1,18 @@
-# Installation
+# インストール
 
-Currently, we support following ways, choose any of your comfort:
+現在、以下の方法をサポートしています。お好みの方法を選択してください。
 
-- [PowerShell](#powershell) - easiest way
-- [Git Commands](#git-commands) - default way + adding manual settings
-- [Pyenv-win zip](#pyenv-win-zip) - manual installation
-- [Python pip](#python-pip) - for existing users
+- [PowerShell](#powershell) - 最も簡単な方法
+- [Gitコマンド](#Gitコマンド) - デフォルトの方法 + 手動での設定追加
+- [Pyenv-win zip](#pyenv-win-zip) - 手動インストール
+- [Python pip](#python-pip) - 既存のユーザー向け
 - [Chocolatey](#chocolatey)
-- [How to use 32-train](#how-to-use-32-train)  
-  - [check announcements](../README.md#お知らせ)
+- [32-trainの使用方法](#32-trainの使い方)
+  - [お知らせを確認する](../README.md#お知らせ)
 
-Hurray! When you are done here are steps to [Validate installation](../README.md#インストールの確認)
+やった！インストールが完了したら、[インストールの確認](../README.md#インストールの確認)の手順に進んでください。
 
-_NOTE:_ If you are running Windows 10 1905 or newer, you might need to disable the built-in Python launcher via Start > "Manage App Execution Aliases" and turning off the "App Installer" aliases for Python
+_注意:_ Windows 10 1905以降を実行している場合は、スタート > "アプリ実行エイリアスの管理"から、Python用の"アプリインストーラー"エイリアスをオフにして、組み込みのPythonランチャーを無効にする必要があるかもしれません。
 
 ***
 
@@ -43,95 +43,95 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv
 
 ***
 
-## **Git Commands**
+## **Gitコマンド**
 
-The default way to install pyenv-win, it needs git commands you need to install git/git-bash for windows
+pyenv-win をインストールするデフォルトの方法は、Windows 用の git/git-bash をインストールする必要があります。
 
-If you are using PowerShell or Git Bash use `$HOME` instead of `%USERPROFILE%`
+PowerShell や Git Bash を使用している場合は、`%USERPROFILE%` の代わりに `$HOME` を使用してください。
 
-git clone using command prompt `git clone https://github.com/pyenv-win/pyenv-win.git "%USERPROFILE%\.pyenv"`
+コマンドプロンプトを使用して git clone するには、`git clone https://github.com/pyenv-win/pyenv-win.git "%USERPROFILE%\.pyenv"` を実行します。
 
-steps to [add System Settings](#add-system-settings)
+[システム設定を追加する](#add-system-settings)手順
 
-_Note:_ Don't forget the check above link, it contains final steps to complete.
+_注意:_ 上記のリンクをチェックすることを忘れないでください。インストールを完了するための最終手順が含まれています。
 
-Installation is complete!
+インストールが完了しました！
 
-[Return to README](../README.md#インストール)
+[README に戻る](../README.md#インストール)
 
 ***
 
 ## **Pyenv-win zip**
 
-Manual installation steps for pyenv-win
+pyenv-winの手動インストール手順
 
-If you are using PowerShell or Git Bash use `$HOME` instead of `%USERPROFILE%`
+PowerShellやGit Bashを使用している場合は、`%USERPROFILE%`の代わりに`$HOME`を使用してください。
 
-1. Download [pyenv-win.zip](https://github.com/pyenv-win/pyenv-win/archive/master.zip)
+1. [pyenv-win.zip](https://github.com/pyenv-win/pyenv-win/archive/master.zip)をダウンロードします。
 
-2. Create a `.pyenv` directory using command prompt `mkdir %USERPROFILE%/.pyenv` if not exist
+2. コマンドプロンプトで`.pyenv`ディレクトリを作成します。`mkdir %USERPROFILE%/.pyenv`（存在しない場合）
 
-3. Extract and move files to `%USERPROFILE%\.pyenv\`
+3. ファイルを`%USERPROFILE%\.pyenv\`に展開して移動します。
 
-4. Ensure there is a `bin` folder under `%USERPROFILE%\.pyenv\pyenv-win`
+4. `%USERPROFILE%\.pyenv\pyenv-win`の下に`bin`フォルダがあることを確認します。
 
-steps to [add System Settings](#add-system-settings)
+[システム設定を追加](#add-system-settings)する手順
 
-_Note:_ Don't forget the check above link, it contains final steps to complete.
+_注意:_ 上記のリンクをチェックするのを忘れないでください。インストールを完了するための最終手順が含まれています。
 
-Installation is complete!
+インストールが完了しました！
 
-Return to [README](../README.md#インストール)
+[README](../README.md#インストール)に戻る
 
 ***
 
 ## **Python pip**
 
-For existing python users
+既存のPythonユーザー向け
 
-### Command prompt
+### コマンドプロンプト
 
 `pip install pyenv-win --target %USERPROFILE%\\.pyenv`  
 
-If you run into an error with the above command use the following instead ([#303](https://github.com/pyenv-win/pyenv-win/issues/303)):
+上記のコマンドでエラーが発生した場合は、代わりに以下を使用してください（[#303](https://github.com/pyenv-win/pyenv-win/issues/303)）：
 
 `pip install pyenv-win --target %USERPROFILE%\\.pyenv --no-user --upgrade`
 
-### PowerShell or Git Bash
+### PowerShellまたはGit Bash
 
-Use the same command as above, but replace `%USERPROFILE%` with `$HOME`.
+上記と同じコマンドを使用しますが、`%USERPROFILE%`を`$HOME`に置き換えます。
 
-### Final steps
+### 最終手順
 
-Proceed to [adding System Settings](#add-system-settings).
+[システム設定の追加](#add-system-settings)に進んでください。
 
-Installation should then be complete!
+インストールが完了するはずです！
 
-Return to [README](../README.md#インストール)
+[README](../README.md#インストール)に戻る
 
 ***
 
 ## **Chocolatey**
 
-This needs choco commands to install, [installation link](https://chocolatey.org/install)
+これには、chocoコマンドを使ってインストールする必要があります。[インストールリンク](https://chocolatey.org/install)
 
-Chocolatey command `choco install pyenv-win`
+Chocolateyコマンド `choco install pyenv-win`
 
-Chocolatey page: [pyenv-win](https://chocolatey.org/packages/pyenv-win)
+Chocolateyページ: [pyenv-win](https://chocolatey.org/packages/pyenv-win)
 
-Installation is complete!
+インストールが完了しました！
 
-Validate Installation
+インストールの確認
 
-Return to [README](../README.md#インストール)
+[README](../README.md#インストール)に戻る
 
 ***
 
-## **Add System Settings**
+## **システム設定の追加**
 
-It's an easy way to use PowerShell here
+ここではPowerShellを使用する簡単な方法を紹介します。
 
-1. Adding PYENV, PYENV_HOME and PYENV_ROOT to your Environment Variables
+1. 環境変数にPYENV、PYENV_HOME、PYENV_ROOTを追加します。
 
    ```pwsh
    [System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
@@ -141,31 +141,35 @@ It's an easy way to use PowerShell here
    [System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
    ```
 
-2. Now adding the following paths to your USER PATH variable in order to access the pyenv command
+2. 次に、以下のパスをUSER PATH変数に追加して、pyenvコマンドにアクセスできるようにします。
 
    ```pwsh
    [System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")
    ```
 
-Installation is done. Hurray!
+インストールが完了しました。おめでとうございます！
 
-Return to [README](../README.md#インストール)
+[README](../README.md#インストール)に戻る
 
 ***
 
-## **How to use 32-train**
+## **32-trainの使い方**
 
-- **Using Git**
-  1. For 32-train prerequisite is [installing pyenv-win using Git](#git-commands)
-  2. Go to .pyenv dir command `cd %USERPROFILE%\.pyenv`
-  3. run `git checkout -b 32bit-train origin/32bit-train`
-  4. run `pyenv --version` and you should see _2.32.x_
-- **Using pip**
-  1. run `pip install pyenv-win==2.32.x --target %USERPROFILE%\.pyenv`
-  2. steps to [add System Settings](#add-system-settings)
-- **Using Zip**
-  1. Download [pyenv-win.zip](https://github.com/pyenv-win/pyenv-win/archive/32bit-train.zip)
-  2. Follow step 2 from [Pyenv-win zip](#pyenv-win-zip)
-  3. steps to [add System Settings](#add-system-settings)
+- **Gitを使用する場合**
+  1. 32-trainの前提条件は、[Gitを使用してpyenv-winをインストールする](#git-commands)ことです。
+  2. .pyenvディレクトリに移動するコマンド`cd %USERPROFILE%\.pyenv`
+  3. `git checkout -b 32bit-train origin/32bit-train`を実行します。
+  4. `pyenv --version`を実行し、_2.32.x_が表示されることを確認します。
 
-Return to [README](../README.md#インストール)
+- **pipを使用する場合**
+  1. `pip install pyenv-win==2.32.x --target %USERPROFILE%\.pyenv`を実行します。
+  2. [システム設定を追加する](#add-system-settings)手順に進みます。
+
+- **Zipを使用する場合**
+  1. [pyenv-win.zip](https://github.com/pyenv-win/pyenv-win/archive/32bit-train.zip)をダウンロードします。
+  2. [Pyenv-win zip](#pyenv-win-zip)の手順2に従います。
+  3. [システム設定を追加する](#add-system-settings)手順に進みます。
+
+[README](../README.md#インストール) に戻る
+
+***
